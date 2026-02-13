@@ -128,21 +128,40 @@ Stop
 
 # Algorithm 8: Calculate Income Tax
 
-Start
+Step 1: Start the program.
 
-Read annual income
+Step 2: Read the annual income from the user 
 
-If income ≤ 2,50,000, tax = 0
+Step 3: Initialize a variable tax and set it to 0.
 
-Else if income ≤ 5,00,000, tax = 5%
+Step 4: Check income conditions:
 
-Else if income ≤ 10,00,000, tax = 20%
+If income is less than or equal to 2,50,000,
 
-Else tax = 30%
+set tax = 0 (no tax).
 
-Display income and tax
+Step 5: If income is between 2,50,001 and 5,00,000,
+calculate tax as:
+tax = (income − 2,50,000) × 5%
 
-Stop
+Step 6: If income is between 5,00,001 and 10,00,000,
+5% tax on the first ₹2,50,000 above exemption
+20% tax on the remaining amount
+Formula:
+tax = (2,50,000 × 5%) + (income − 5,00,000) × 20%
+
+Step 7: If income is greater than 10,00,000,
+5% tax on ₹2,50,000
+20% tax on ₹5,00,000
+30% tax on remaining income
+Formula:
+tax = (2,50,000 × 5%) + (5,00,000 × 20%) + (income − 10,00,000) × 30%
+
+Step 8: Display the annual income.
+
+Step 9: Display the calculated income tax.
+
+Step 10: Stop the program.
 
 # Algorithm 9: Validate and Increment Date
 
